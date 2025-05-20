@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Study</title>
+</head>
+<body>
+    <div class="box outer">
+        <div class="box inner">a1</div>
+        <div class="box inner">a2</div>
+        <div class="box inner">a3</div>
+        <div class="box inner">a4</div>
+        <div class="box inner">a5</div>
+    </div>
+</body>
+<style>
+    .box {
+        border-radius: 5px;
+    }
+
+    .box.outer {
+        width: 340px;
+        height: 340px;
+        background-color: lightblue;
+        /* padding:30px ; */
+    }
+
+    .box.inner {
+        width: 50px;
+        height: 50px;
+        background-color: lightpink;
+        margin:0 auto 22px;
+    }
+
+.box.outer{display: flex;}
+.box.outer{display:flex;align-items: center;}
+.a1{order: 2;}
+.a2{order: 3;}
+.a3{order: 1;}
+.a4{order: 4;}
+.a5{order: 5;}
+</style>
+</html>
